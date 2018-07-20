@@ -48,7 +48,7 @@
               imagePullPolicy: "IfNotPresent",
               command: ["tar", "--no-same-owner", "-xzvf",  pathToFile, "-C", "mountPath"],
               volumeMounts: {
-                  mountPath: mounthPath,
+                  mountPath: mountPath,
                   name: "pets-data",
               },
             volumes: {
